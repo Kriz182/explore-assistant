@@ -1,4 +1,4 @@
-#Introduction
+# Introduction
 This document provides instructions on how to install and customize the Explore Assistant demo. The demo is a web application that allows users to explore data in Looker by asking questions in natural language. To install the demo, you will need to install gcloud CLI, Vertex AI Python SDK, and Streamlit. Once the demo is installed, you can customize it by generating a summary of the model/explorer you wish to add to the Explore Assistant and using Gen AI Studio to test your changes.
 
 Author : Anouar Hnini
@@ -6,7 +6,7 @@ Author : Anouar Hnini
 ------------
 
 
-#Install the demo
+# Install the demo
 Here are the steps on how to install Explore Assistant (on thelook/order_items explore):
 - Install gcloud CLI : 
 Go to the website https://cloud.google.com/sdk/docs/install
@@ -31,20 +31,19 @@ Make sure that you login to your Vertex AI
 ------------
 
 
-#Run the app:
+# Run the app:
 Before running the app, make sure that you’re logged in to the instance (Looker) and performing login using gcloud CLI (or any other preferred method to you). 
 
 1. Open a terminal window and navigate to the directory where you saved the script.
-Run the following command: (replace explore_assistant.py by the name of your script)
-    ```python
-streamlit run explore_assistant.py
-```
+Run the following command: (replace explore_assistant.py by the name of your script) :
 
-1. The Explore Assistant app will open in your browser.
+```streamlit run explore_assistant.py```
+
+2. The Explore Assistant app will open in your browser.
 Note that the apps will create two logs files (all logs, and success_examples) that you could use to input into your Generative AI Studio. 
 
 
-##Customize the demo
+# Customize the demo
 If you want to customize the demo for a specific model/explore : 
 Generate a summary of the model/explore you wish to add to the Explore Assistant using this Notebook : **generate-looker-dictionnary.ipynb**
 
