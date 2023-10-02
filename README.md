@@ -18,7 +18,8 @@ Follow the instructions on the website to install the Vertex AI Python SDK.
 Go to the Streamlit website and click on the "Install" button.
 Follow the instructions on the website to install the Streamlit SDK.
 - Download the script:
-Go to the explore-assistant.ipynb and Download the python file (or run it using Streamlit on Colab).
+Go to the explore-assistant.ipynb if you wish to runit using Streamlit on Google Colab.
+Use directly **explore-assistant.py**
 
 Save the script to the same folder where you installed streamlit and vertex AI.
 Edit the following parameters : 
@@ -34,8 +35,8 @@ Make sure that you login to your Vertex AI
 # Run the app:
 Before running the app, make sure that you’re logged in to the instance (Looker) and performing login using gcloud CLI (or any other preferred method to you). 
 
-1. Open a terminal window and navigate to the directory where you saved the script.
-Run the following command: (replace explore_assistant.py by the name of your script) :
+1. Open a terminal window and navigate to the directory where you saved the script (explore-assistant.py).
+Run the following command:  :
 
 ```streamlit run explore_assistant.py```
 
