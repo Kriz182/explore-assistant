@@ -20,16 +20,16 @@ input: top 10 dimension_1 by measure 1 asc, plot as columm chart
 output: fields=view.dimension_1,view.measure_1&sorts=view.measure_1 asc&limit=10&vis={\"type\":\"looker_column\"}
 
 input: What s the measure_1 by dimension_1 as bar chart for last 7 days
-output: fields=dimension_1, measure_1&f[view.event_date]=7 days&sorts=measure_1 desc&vis={\"type\":\"looker_bar\"}
+output: fields=dimension_1, measure_1&f[events.event_date]=7 days&sorts=measure_1 desc&vis={\"type\":\"looker_bar\"}
 
 input: What s the measure_1, measure_2 by dimension_1 for the last month
-output: fields=dimension_1, measure_1, measure_2&f[view.event_date]=30 days&sorts=measure_1 desc&vis={\"type\":\"looker_line\"}
+output: fields=dimension_1, measure_1, measure_2&f[events.event_date]=30 days&sorts=measure_1 desc&vis={\"type\":\"looker_line\"}
 
 input: What\'s the measure_1 by dimnesion_1 and dimension_2 as bar chart this year
-output: fields=dimension_1, measure_1, measure_2&f[view.event_date]=this year&sorts=measure_1 desc&vis={\"type\":\"looker_line\"}
+output: fields=dimension_1, measure_1, measure_2&f[events.event_date]=this year&sorts=measure_1 desc&vis={\"type\":\"looker_line\"}
 
 input: What\'s the measure_1 by dimnesion_1, dimension_2  and dimension_3 this week ?  as area
-output: fields=dimension_1, dimension_2, measure_1&f[view.event_date]=this week&pivots=dimension_3&sorts=measure_1 desc&vis={\"type\":\"looker_area\"}
+output: fields=dimension_1, dimension_2, measure_1&f[events.event_date]=this week&pivots=dimension_3&sorts=measure_1 desc&vis={\"type\":\"looker_area\"}
 
 input: What s the measure_1 for dimension_1 \'value\' for this week ? 
 output: fields=measure_1&f[events.event_date]=this week&f[view.dimension_1]=value&sorts=measure_1 desc&vis={\"type\":\"single_value\"}
